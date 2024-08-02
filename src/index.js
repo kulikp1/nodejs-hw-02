@@ -5,7 +5,7 @@ setupServer();
 
 const bootstrap = async () => {
   await initMongoConnection();
-  startServer();
+  setupServer();
 };
 
 bootstrap();
