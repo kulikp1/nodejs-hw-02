@@ -7,6 +7,8 @@ import {
   logoutUserController,
   refreshSessionController,
   registerUserController,
+  resetPasswordController,
+  sendResetEmailController,
 } from '../controllers/auth.js';
 import { userLoginSchema } from '../validation/userLoginSchema.js';
 import { requestResetEmailSchema } from '../validation/requestResetEmail.js';
