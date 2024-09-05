@@ -9,6 +9,8 @@ import {
   registerUserController,
 } from '../controllers/auth.js';
 import { userLoginSchema } from '../validation/userLoginSchema.js';
+import { requestResetEmailSchema } from '../validation/requestResetEmail.js';
+import { resetPasswordSchema } from '../validation/resetPasswordSchema.js';
 
 const authRouter = Router();
 
@@ -27,5 +29,18 @@ authRouter.post(
 authRouter.post('/refresh', ctrlWrapper(refreshSessionController));
 
 authRouter.post('/logout', ctrlWrapper(logoutUserController));
+
+authRouter.post(
+  '/send-reset-email',
+  validateBody(requestResetEmailSchema),
+  ctrlWrapper(sendResetEmailController),
+);
+
+authRouter.post(
+  '/reset-pwd',
+  validateBody(resetPasswordSchema),
+  ctrlWrapper(resetPasswordController),
+);
+
 
 export default authRouter;
