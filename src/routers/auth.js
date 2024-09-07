@@ -44,5 +44,4 @@ authRouter.post(
   ctrlWrapper(resetPasswordController),
 );
 
-
 export default authRouter;
