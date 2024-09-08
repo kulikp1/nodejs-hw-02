@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "version": "1.0.0",
-    "title": "ContactsHUB",
+    "title": "Contacts",
     "license": {
       "name": "Apache 2.0",
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
@@ -14,7 +14,7 @@
       "url": "http://localhost:3000"
     },
     {
-      "url": "https://contacts-app-hb9h.onrender.com"
+      "url": "https://hw7-swagger-cs0i.onrender.com"
     }
   ],
   "tags": [
